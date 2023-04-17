@@ -39,6 +39,7 @@ a {
   font-weight: 400;
   font-size: 1.6rem;
   border: 1px solid #2e80ce;
+  color: #fff;
 }
 
 .btn:hover {
@@ -115,16 +116,14 @@ a {
 }
 
 .navbar__link,
-.action__login {
+.header-action__login {
   font-weight: 300;
   font-size: 1.6rem;
   color: #c9d2da;
   padding: 4px 21px;
 }
 
-.navbar__link:hover {
-  text-shadow: 1px 0 0 currentColor;
-}
+.navbar__link:hover,
 .navbar__item--active {
   text-shadow: 1px 0 0 currentColor;
 }
@@ -141,8 +140,135 @@ a {
   background: #fff;
 }
 
-.action__SignUp {
-  min-width: 104px;
+.header-action {
+  display: flex;
+  align-items: center;
+}
+.header-action__login {
+  margin-right: 7px;
+}
+
+.header-action__SignUp {
   --height: 44px;
+  min-width: 104px;
+}
+
+/* hero */
+/* Header top */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__list {
+  display: flex;
+}
+
+.header-action__login,
+.navbar__link {
+  padding: 4px 21px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #c9d2da;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
   color: #fff;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link--active::before {
+  position: relative;
+  top: -2px;
+  left: -8px;
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.header-action {
+  display: flex;
+  align-items: center;
+}
+
+.header-action__login {
+  margin-right: 7px;
+}
+
+.header-action__signup {
+  --height: 44px;
+  min-width: 104px;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  margin-top: 76px;
+}
+
+.hero__content {
+  flex-shrink: 0;
+  width: 44%;
+}
+
+.hero__media {
+  flex-grow: 1;
+}
+
+.hero__heading {
+  font-weight: 600;
+  font-size: 7rem;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.hero__desc {
+  margin-top: 22px;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #c9d2da;
+}
+
+.hero__row {
+  display: flex;
+  align-items: center;
+  margin-top: 38px;
+}
+
+.hero__phone {
+  margin-left: 38px;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #ffffff;
+}
+
+.hero__images {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hero__img {
+  width: 330px;
+  height: 540px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.hero__img:first-child {
+  position: relative;
+  margin-right: -6px;
+}
+
+.hero__img:last-child {
+  width: 210px;
+  height: 410px;
 }
