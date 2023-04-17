@@ -10,3 +10,75 @@ body {
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
 }
+
+/* Common */
+:root {
+  --header-bg: #10375c;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+/* header */
+
+.header {
+  min-height: 100vh;
+  background: var(--header-bg);
+}
+
+/* logo */
+
+.logo {
+  font-size: 1rem;
+  position: relative;
+  display: inline-flex;
+  /* justify-content: flex-start; */
+}
+
+.logo__circle::before,
+.logo__circle::after {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.logo__circle::before {
+  width: 3em;
+  height: 3em;
+  background: #2e80ce;
+}
+
+.logo__circle::after {
+  position: absolute;
+  width: 1.6em;
+  height: 1.6em;
+  background: #fff;
+  /* do mau trang */
+  top: 1.1em;
+  left: 1.1em;
+}
+
+.logo__text {
+  margin-left: 0.6em;
+  color: #fff;
+  text-align: right;
+  line-height: 1.6em;
+}
+
+.logo__branch {
+  display: block;
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+.logo__branch--small {
+  font-size: 1.2em;
+  font-weight: 300;
+}
