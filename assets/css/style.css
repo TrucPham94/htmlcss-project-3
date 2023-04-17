@@ -223,7 +223,7 @@ a {
 
 .hero__heading {
   font-weight: 600;
-  font-size: 7rem;
+  font-size: 6.1rem;
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: #ffffff;
@@ -271,4 +271,104 @@ a {
 .hero__img:last-child {
   width: 210px;
   height: 410px;
+}
+
+/* Services */
+
+.services {
+  padding: 170px 0;
+}
+
+.section-heading {
+  font-weight: 600;
+  font-size: 5rem;
+  letter-spacing: -0.02em;
+  color: #10375c;
+}
+
+.service_heading {
+  text-align: center;
+}
+
+.section-desc {
+  margin-top: 18px;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #575f66;
+}
+
+.service_desc {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 468px;
+}
+
+.services__row {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service__img {
+  width: 570px;
+  height: 570px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.service__list {
+  margin-bottom: 55px;
+}
+
+/* service item */
+.service-item {
+  display: flex;
+  width: 470px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 21px 22px;
+  transition: 0.25s;
+}
+
+.service-item__icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: #eff6fd;
+  border-radius: 50%;
+  color: #10375c;
+  transition: 0.25s;
+}
+
+.service-item:hover {
+  box-shadow: 0px 8px 16px rgba(40, 155, 222, 0.15);
+  position: relative; /*see the bt shadow*/
+}
+
+.service-item:hover .service-item__icon {
+  background: #2e80ce;
+  color: #fff;
+}
+.service-item__body {
+  margin-left: 20px;
+}
+
+.service-item__heading {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.27;
+  color: #10375c;
+}
+
+.service-item__desc {
+  margin-top: 8px;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #575f66;
 }
