@@ -504,6 +504,11 @@ a {
   height: 318px;
   object-fit: cover;
   display: block;
+  transition: 0.25s;
+}
+
+.member-item:hover .member-item__thumb {
+  transform: scale(1.2);
 }
 
 .member-item__name {
