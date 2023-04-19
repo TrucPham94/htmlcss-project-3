@@ -556,3 +556,48 @@ a {
 .member__control-next-icon {
   rotate: 180deg;
 }
+
+.install {
+  margin-top: 180px;
+}
+
+.install__inner {
+  background: #2e80ce;
+  border-radius: 4px;
+  padding: 0 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.install__img {
+  margin-top: -95px;
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+  display: block;
+}
+
+.install__content {
+  width: 586px;
+}
+
+.install-heading {
+  color: #ffffff;
+  max-width: 489px;
+  line-height: 1.2;
+}
+
+.install-desc {
+  color: #ffffff;
+}
+
+.install__row {
+  margin-top: 38px;
+  display: flex;
+  gap: 28px;
+}
+
+.install__btn:hover {
+  cursor: pointer;
+}
